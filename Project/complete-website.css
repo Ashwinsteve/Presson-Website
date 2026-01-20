@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Tinos", serif;
+}
+
+.nav{
+    background-color: rgb(234, 234, 234);
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin-top: 0px;
+    padding: 0px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+.nav li{
+    display: inline-block;
+    padding-top: 25px;
+}
+
+.logo{
+    font-size: 42px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.first{
+    margin-left: 700px;
+    margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.ele{
+    margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav .ele:hover,
+.nav .first:hover{
+    text-decoration: underline;
+}
+
+.dropdown{
+    position: relative;
+    z-index: 1;
+}
+
+.arrow{
+    font-size: 13px;
+    margin-left: 1.5px;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+.arrow:hover{
+    transform: rotate(-7deg);
+    transition-duration: 2s;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #f3f3f3;
+    width: 260px;
+    padding: 15px;
+    list-style: none;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-menu li{
+    display: block;
+    padding: 10px ;
+    font-size: 17px;
+}
+
+.dropdown-menu li:hover{
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.pg1{
+    height: 830px;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+    position: relative;
+    margin: 0px;
+    padding-top: 0px; 
+}
+
+.pg1 .first-line{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: "Tinos", serif; 
+}
+
+.pg1 .second-line{
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    font-size: 150px;
+    word-spacing: 20px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    font-family: "Tinos", serif;
+    z-index: 2;
+}
+
+.pg1 .image{
+    position: absolute;
+    top: 210px;
+    left: 610px;
+    z-index: 0;   
+}
+
+.pg1 .symbol{
+    position: absolute;
+    top: 120px;
+    left: 1020px;
+    height: 90px;
+    width: 90px;
+    z-index: 2;
+}
+
+.pg1 .block1{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    top: 590px;
+    left: 90px;
+    background-color: rgba(43, 44, 50);
+}
+
+.pg1 .paradown{
+    position: absolute;
+    top: 630px;
+    left: 90px;
+    right: 780px;
+    color: black;
+    font-family: "Tinos", serif;
+    font-size: 15px;
+}
+
+.pg1 .twitter img{
+    position: absolute;
+    top: 720px;
+    left: 920px;
+    height: 23px;
+    width: 23px;
+}
+.pg1 .facebook img{
+    position: absolute;
+    top: 720px;
+    left: 1000px;
+    height: 23px;
+    width: 23px;
+}
+.pg1 .insta img{
+    position: absolute;
+    top: 720px;
+    left: 1080px;
+    height: 23px;
+    width: 23px;
+}
+
+.pg1 .insta img:hover, 
+.pg1 .facebook img:hover, 
+.pg1 .twitter img:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.pg2{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: rgb(43, 44, 50);
+}
+
+.pg2 .left{
+    position: absolute;
+    color: rgb(234, 234, 234);
+    top: 90px;
+    left: 120px;
+    font-family: "Tinos", serif; 
+    font-size: 70px;
+    line-height: 6px;
+    text-transform: uppercase;
+}
+
+.pg2 .right-first{
+    position: absolute;
+    color: rgb(234, 234, 234);
+    top: 90px;
+    left: 800px;
+    right: 70px;
+    line-height: 25px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg2 .right-second{
+    position: absolute;
+    color: rgb(234, 234, 234);
+    top: 290px;
+    left: 800px;
+    right: 70px;
+    line-height: 25px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pg2 .right-third{
+    position: absolute;
+    color: rgb(234, 234, 234);
+    top: 490px;
+    left: 800px;
+    right: 70px;
+    line-height: 25px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg2 .right-first h3, .pg2 .right-second h3, .pg2 .right-third h3
+{
+    font-size: 25px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.pg2 .block2{
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    top: 590px;
+    left: 90px;
+    background-color: rgb(234, 234, 234);
+}
+
+.pg2 .symbol1 img{
+    position: absolute;
+    top: 90px;
+    left: 600px;
+    height: 120px;
+    width: 120px;
+}
+
+.pg2 .symbol2 img{
+    position: absolute;
+    top: 290px;
+    left: 600px;
+    height: 120px;
+    width: 120px;
+}
+
+.pg2 .symbol3 img{
+    position: absolute;
+    top: 490px;
+    left: 600px;
+    height: 120px;
+    width: 120px;
+}
+
+.pg3{
+    position: relative;
+    height: 1100px;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+}
+
+.pg3 .left-top {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    text-transform: uppercase;
+    color: black;
+    font-family: "Tinos", serif;
+    line-height: 9px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.pg3 .symbol-center img{
+    position: absolute;
+    top: 70px;
+    left: 600px;
+    height: 110px;
+    width: 110px;
+}
+
+.pg3 .right-top{
+    left: 830px;
+    right: 90px;
+    text-align: justify;
+    position: absolute;
+    top: 80px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg3 .img1 img{
+    position: absolute;
+    top: 250px;
+    left: 80px;
+    height: 420px;
+    width: 850px;
+}
+
+.pg3 .img2 img{
+    position: absolute;
+    top: 250px;
+    left: 980px;
+    height: 200px;
+    width: 200px;
+}
+
+.pg3 .img3 img{
+    position: absolute;
+    top: 470px;
+    left: 980px;
+    height: 200px;
+    width: 200px;
+}
+
+.pg3 .bottom-left{
+    position: absolute;
+    bottom: 240px;
+    left: 85px;
+    line-height: 12px;
+    font-family: "Tinos", serif;
+    font-size: 30px;
+}
+
+.pg3 .bottom-right{
+    position: absolute;
+    bottom: 210px;
+    left: 650px;
+    right: 90px;
+    font-size: 13.5px;
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg3 .cost{
+    position: absolute;
+    bottom: 30px;
+    left: 85px;
+    font-size: 45px;
+    color: cornflowerblue;
+}
+
+.pg3 .learn-box{
+    position: absolute;
+    bottom: 90px;
+    left: 950px;
+    right: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 4px double white;
+}
+
+.pg3 .learn-box:hover{
+    background-color: blueviolet;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+
+.pg4{
+    position: relative;
+    height: 850px;
+    width: 100%;
+    background-color: rgb(217, 223, 229);
+}
+
+.pg4 .top-para{
+    position: absolute;
+    top:70px;
+    left: 80px;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: "Tinos", serif; 
+    font-weight: 800;
+}
+
+.pg4 .symbol4 img{
+    height: 120px;
+    width:125px;
+    position: absolute;
+    top: 90px;
+    right: 110px;
+}
+
+.pg4 .img-left img{
+    position: absolute;
+    top: 260px;
+    left: 90px;
+}
+
+.pg4 .img-right img{
+    position: absolute;
+    top: 260px;
+    left: 650px;
+}
+
+.pg4 .img-left img:hover,
+.pg4 .img-right img:hover{
+    filter: brightness(60%);
+    cursor: pointer;
+}
+
+.pg4 .cap1{
+    position: absolute;
+    font-size: 22px;
+    left: 90px;
+    top:575px;
+    font-family: "Tinos", serif; 
+    font-weight: 800;
+}
+
+.pg4 .cap2{
+    position: absolute;
+    font-size: 22px;
+    left: 650px;
+    top:575px;
+    font-family: "Tinos", serif; 
+    font-weight: 800;
+}
+
+.pg4 .para-down{
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    left: 90px;
+    top: 700px;
+    right: 600px;
+    line-height: 25px;
+}
+
+.pg4 .learn-box2{
+    position: absolute;
+    top:700px;
+    left: 950px;
+    right: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 4px double white;
+}
+
+.pg4 .learn-box2:hover{
+    background-color: blueviolet;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+
+.pg5{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: rgb(43, 44, 50);
+}
+
+.pg5 .heading{
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    font-family: "Tinos", serif; 
+    font-weight: 800;
+    font-size: 62px;
+    text-transform: uppercase;
+    color: #f3f3f3;
+    line-height: 12px;
+}
+
+.pg5 .para1{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    right: 700px;
+    color: #f3f3f3;
+    line-height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg5 .para1 p{
+    font-size: 15px;
+    text-align: left;
+}
+
+.pg5 .para1 h3{
+    font-size: 27px;
+}
+
+.pg5 .para2{
+    position: absolute;
+    top: 250px;
+    left: 850px;
+    right: 100px;
+    color: #f3f3f3;
+    line-height: 25px;
+}
+
+.pg5 .para2 p{
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg5 .para2 h3{
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg5 .symbol1 img{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 270px;
+    left: 35px;
+}
+
+.pg5 .symbol2 img{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 270px;
+    left: 705px;
+}
+
+.pg6{
+    position: relative;
+    height: 720px;
+    width: 100%;
+    background-color: rgb(217, 223, 229);
+}
+
+.pg6 .heading{
+    color: black;
+    font-family: "Tinos", serif; 
+    font-size: 50px;
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    text-transform: uppercase;
+    line-height: 10px;
+    font-weight: 800;
+}
+
+.pg6 .pt1 {
+    position: absolute;
+    top: 90px;
+    left: 700px;
+    right: 120px;
+}
+
+.pg6 .pt1 h1{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg6 .pt1 p{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg6 .pt2 {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    right: 120px;
+}
+
+.pg6 .pt2 h1{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg6 .pt2 p{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pg6 .pt3 {
+    position: absolute;
+    top: 500px;
+    left: 700px;
+    right: 120px;
+}
+
+.pg6 .pt3 h1{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg6 .pt3 p{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg6 .num1, .pg6 .num2, .pg6 .num3{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 110px;
+    left: 560px;
+    font-weight: 900;
+}
+
+.pg6 .num2{
+    top: 180px;
+}
+
+.pg6 .num3{
+    top:400px;
+}
+
+.pg6 .box{
+    height: 20px;
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    top: 600px;
+    left: 90px;
+}
+
+.pg7{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+    position: relative;
+}
+
+.pg7 .heading{
+    color: black;
+    font-family: "Tinos", serif; 
+    font-size: 50px;
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    text-transform: uppercase;
+    line-height: 10px;
+    font-weight: 800;
+}
+
+.pg7 .para{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    right: 800px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.pg7 .img1, .pg7 .img2, .pg7 .img3, .pg7 .img4{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+.pg7 .img1{
+    top: 100px;
+    left: 550px;
+}
+
+.pg7 .img2{
+    top: 100px;
+    left: 900px;
+}
+
+.pg7 .img3{
+    top: 550px;
+    left: 550px;
+}
+
+.pg7 .img4{
+    top: 550px;
+    left: 900px;
+}
+
+.pg7 .cap1 h4,.pg7 .cap2 h4,.pg7 .cap3 h4,.pg7 .cap4 h4{
+    position: absolute;
+    font-family: "Tinos", serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pg7 .cap1 p,.pg7 .cap2 p,.pg7 .cap3 p,.pg7 .cap4 P{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.pg7 .cap1 h4{
+    top: 400px;
+    left: 550px;
+}
+
+.pg7 .cap1 p{
+    top: 450px;
+    left: 550px;
+}
+
+.pg7 .cap2 h4{
+    top: 400px;
+    left: 900px;
+}
+
+.pg7 .cap2 p{
+    top: 450px;
+    left: 900px;
+}
+
+.pg7 .cap3 h4{
+    top: 850px;
+    left: 550px;
+}
+
+.pg7 .cap3 p{
+    top: 900px;
+    left: 550px;
+}
+
+.pg7 .cap4 h4{
+    top: 850px;
+    left: 900px;
+}
+
+.pg7 .cap4 p{
+    top: 900px;
+    left: 900px;
+}
+
+.pg7 .box{
+    height: 20px;
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    top: 900px;
+    left: 90px;
+}
+
+.pg8{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(43, 44, 50);
+}
+.pg8 .heading{
+    color: #f3f3f3;
+    font-family: "Tinos", serif; 
+    font-size: 70px;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    text-transform: uppercase;
+    line-height: 10px;
+    font-weight: 800; 
+}
+
+.pg8 .para{
+    color: #f3f3f3;
+    font-size: 14px;
+    position: absolute;
+    left: 120px;
+    top: 250px;
+    line-height: 20px;
+    right: 750px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg8 .partners-list img{
+    top: 180px;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    left: 800px;
+}
+
+.pg8 .box{
+    height: 10px;
+    width: 100px;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 450px;
+    left: 120px;
+}
+
+.pg9{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+    position: relative;
+}
+
+.pg9 .heading{
+    color: black;
+    font-family: "Tinos", serif; 
+    font-size: 55px;
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    text-transform: uppercase;
+    line-height: 10px;
+    font-weight: 800; 
+}
+
+.pg9 .para{
+    font-size: 14px;
+    position: absolute;
+    left: 120px;
+    top: 250px;
+    line-height: 20px;
+    right: 750px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg9 table{
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.pg9 .form input{
+    height: 30px;
+    width: 500px;
+    border: #f3f3f3;
+}
+
+.pg9 .form textarea{
+    border: #f3f3f3;
+}
+.pg9 table td{
+    padding: 4px;
+}
+
+.pg9 button{
+    position: absolute;
+    top: 480px;
+    left: 1020px;
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: #f3f3f3;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.pg9 button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: cadetblue;
+}
+
+.pg9 .box{
+    height: 20px;
+    width: 190px;
+    background-color:black;
+    position: absolute;
+    top: 500px;
+    left: 120px;
+}
+
+.pg10{
+    height: 300px;
+    width: 100%;
+    background-color:  rgb(43, 44, 50);
+    position: relative;
+}
+
+.pg10 .logp img{
+    position: absolute;
+    top: 90px;
+}
+
+.pg10 .contact h4{
+    position: absolute;
+    color: #f3f3f3;
+    top: 70px;
+    left: 550px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Tinos", serif; 
+}
+
+.pg10 .contact #one{
+    position: absolute;
+    color: #f3f3f3;
+    top: 150px;
+    left: 550px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg10 .contact #two{
+    position: absolute;
+    color: #f3f3f3;
+    top: 175px;
+    left: 550px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg10 .address h4{
+    position: absolute;
+    color: #f3f3f3;
+    top: 70px;
+    left: 950px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Tinos", serif; 
+}
+
+.pg10 .address #one{
+    position: absolute;
+    color: #f3f3f3;
+    top: 150px;
+    left: 950px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg10 .address #two{
+    position: absolute;
+    color: #f3f3f3;
+    top: 175px;
+    left: 950px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pg10 .social-media img{
+    position: absolute;
+    top: 220px;
+    left: 540px;
+    height: 40px;
+}
+
+.pg10 .social-media img:hover{
+    cursor: pointer;
+}
